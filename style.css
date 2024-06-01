@@ -1,0 +1,378 @@
+body {
+  font-family: "ruluko", Arial, Helvetica, sans-serif;
+  color: rgb(106, 94, 78);
+}
+
+/* home */
+.home {
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  height: 100vh;
+  background-image: url("img/bg.png");
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.name-date {
+  margin: auto;
+}
+
+.home h2 {
+  font-family: "stalemate", arial, sans-serif;
+  font-size: 7rem;
+  text-transform: capitalize;
+  background: linear-gradient(
+    to right,
+    rgb(112, 112, 227),
+    rgb(16, 171, 237),
+    rgb(17, 209, 219),
+    rgb(132, 228, 233),
+    gold,
+    violet,
+    rgb(0, 208, 255)
+  );
+  background-clip: text;
+  display: inline;
+  color: transparent;
+  animation: animated 5s linear infinite;
+}
+
+@keyframes animated {
+  to {
+    background-position-x: 445px;
+  }
+}
+
+.home p {
+  margin-top: -2.5rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.home .simply-countdown {
+  margin-top: -0.7rem;
+}
+
+.home button {
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
+
+.packaging {
+  background-image: url("img/bg-main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+/* navbar */
+#logo {
+  font-family: "stalemate";
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin-top: 0.7rem;
+  color: rgb(82, 74, 64);
+}
+
+#navbar {
+  max-height: 4rem;
+  background-color: #ffffff74 !important;
+}
+
+#label {
+  font-family: "stalemate";
+}
+
+#link-hamburger a {
+  margin: 0.5rem 0.3rem;
+  font-size: 1rem;
+}
+
+/* mempelai */
+.mempelai {
+  padding: 1.8rem;
+  padding-top: 8rem;
+  min-height: 45rem;
+  padding-bottom: 5rem;
+}
+
+.mempelai::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 90%;
+  background: linear-gradient(0deg, #010101df 3%, #ffffff00 25%);
+  margin-top: -23.35rem;
+  margin-left: -1.8rem;
+}
+
+h3,
+h1 {
+  font-family: "stalemate", cursive;
+  color: rgb(58, 52, 44);
+}
+
+.mempelai h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.mempelai p {
+  text-align: center;
+  max-width: 35rem;
+  margin-top: 1rem;
+}
+
+.mempelai .calon .fadil img,
+.mempelai .calon .vexana img {
+  width: 100%;
+}
+
+.mempelai .calon {
+  margin-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+.mempelai .calon h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: -1rem;
+}
+
+.mempelai .calon p {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.mempelai .calon .fadil p {
+  text-align: right;
+}
+.mempelai .calon .vexana p {
+  text-align: left;
+}
+
+.mempelai .calon h5 {
+  font-size: 1rem;
+  margin-top: -0.5rem;
+}
+
+/* home */
+.home-contains {
+  padding-top: 7rem;
+  height: 40rem;
+}
+
+.home-contains .text-name h1,
+.info .info-kolom h1,
+.RSVP h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.home-contains .text-name {
+  text-align: center;
+  padding: 1rem;
+}
+
+.home-contains .text-name .kepada {
+  text-transform: capitalize;
+  font-family: "ruluko", Arial, Helvetica, sans-serif;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.home-contains .text-name .people-name {
+  font-size: 1.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.home-contains .bg {
+  margin-top: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.home-contains .bg .salam {
+  color: #010101df;
+}
+
+.home-contains .bg p {
+  display: inline-block;
+  width: 45rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.home-contains .bg h5 {
+  font-size: 1rem;
+  color: #000;
+}
+
+/* info */
+.info,
+.RSVP {
+  background-color: #010101df;
+  color: #fff;
+  text-align: center;
+  padding: 8rem;
+}
+
+.info .info-kolom {
+  margin: 0 auto;
+}
+
+.info .info-kolom h1,
+.RSVP h1 {
+  color: lightblue;
+  margin-bottom: 1rem;
+}
+
+.info .info-kolom h5 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.info .info-kolom .btn {
+  margin-bottom: 0.5rem;
+}
+
+.info .info-kolom p {
+  width: 40rem;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+.info .card {
+  background: transparent;
+  color: #fff;
+  margin-top: 1rem;
+  border: 1px solid #fff;
+}
+
+.info .card .card-body {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.info .card .card-header {
+  border-bottom: 1px solid #fff;
+}
+
+.info .card .card-footer {
+  border-top: 1px solid #fff;
+}
+
+/* RSVP */
+.RSVP {
+  padding-top: 6rem;
+}
+
+.RSVP p {
+  margin-top: -0.7rem;
+}
+
+.RSVP form {
+  margin-top: 0.5rem;
+}
+
+.RSVP .selected label {
+  margin-bottom: 0.3rem;
+}
+
+.RSVP .selected {
+  margin-top: 0.3rem;
+}
+
+/* packaging */
+.packaging.muncul {
+  display: none;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  #nav {
+    margin-top: -1.2rem;
+  }
+
+  #btn {
+    border: none;
+  }
+
+  @keyframes animated {
+    to {
+      background-position-x: 289px;
+    }
+  }
+
+  .offcanvas-title {
+    font-family: "stalemate";
+    font-size: 1.9rem;
+  }
+
+  #link-hamburger a {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .home-contains p {
+    max-width: 35rem;
+  }
+
+  .mempelai .calon .img {
+    max-width: 15rem;
+  }
+
+  .mempelai .calon .vexana {
+    margin-left: 6rem;
+    margin-top: 2rem;
+    padding-bottom: 6rem;
+  }
+
+  .mempelai .calon .vexana .text {
+    margin-top: 2rem;
+  }
+
+  .mempelai .calon .fadil .text {
+    margin-top: 1rem;
+  }
+
+  .mempelai .calon .fadil .text p {
+    margin-left: 9rem;
+  }
+
+  .mempelai::after {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 45%;
+  }
+
+  .mempelai .calon .vexana {
+    margin-left: -1rem;
+    padding-bottom: 3rem;
+  }
+
+  #offcanvasNavbar {
+    width: 50% !important;
+  }
+}
