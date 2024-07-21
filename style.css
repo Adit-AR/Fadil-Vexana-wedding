@@ -48,8 +48,8 @@ body {
 }
 
 .home p {
-  margin-top: -2.5rem;
-  font-size: 1.1rem;
+  margin-top: -2.35rem;
+  font-size: 1rem;
   text-transform: capitalize;
 }
 
@@ -76,12 +76,12 @@ body {
   font-weight: 500;
   font-size: 2.4rem;
   margin-top: 0.7rem;
-  color: rgb(82, 74, 64);
+  color: #010101b0;
 }
 
 #navbar {
   max-height: 4rem;
-  background-color: #ffffff74 !important;
+  background-color: #8beff8c9 !important;
 }
 
 #label {
@@ -99,23 +99,13 @@ body {
   padding-top: 8rem;
   min-height: 45rem;
   padding-bottom: 5rem;
-}
-
-.mempelai::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 90%;
-  background: linear-gradient(0deg, #010101df 3%, #ffffff00 25%);
-  margin-top: -23.35rem;
-  margin-left: -1.8rem;
+  position: relative;
 }
 
 h3,
 h1 {
   font-family: "stalemate", cursive;
-  color: rgb(58, 52, 44);
+  color: lightblue;
 }
 
 .mempelai h1 {
@@ -177,6 +167,10 @@ h1 {
   text-transform: capitalize;
 }
 
+.home-contains .text-name h1 {
+  text-transform: none;
+}
+
 .home-contains .text-name {
   text-align: center;
   padding: 1rem;
@@ -187,12 +181,14 @@ h1 {
   font-family: "ruluko", Arial, Helvetica, sans-serif;
   margin-top: 1.5rem;
   font-size: 1rem;
+  color: #fff;
 }
 
 .home-contains .text-name .people-name {
   font-size: 1.9rem;
   font-weight: 500;
   text-transform: capitalize;
+  color: #fff;
 }
 
 .home-contains .bg {
@@ -202,7 +198,10 @@ h1 {
 }
 
 .home-contains .bg .salam {
-  color: #010101df;
+  color: lightblue;
+  font-family: "stalemate", cursive;
+  font-size: 3.5rem;
+  margin-bottom: -1rem;
 }
 
 .home-contains .bg p {
@@ -213,18 +212,48 @@ h1 {
   margin-top: 1rem;
 }
 
-.home-contains .bg h5 {
-  font-size: 1rem;
-  color: #000;
+.home-contains .bg .h5 {
+  /* color: #000; */
+  justify-content: center;
+  text-align: center;
+}
+
+.home-contains .bg .h5 h4 {
+  font-size: 0.8rem;
+  /* color: #010101df; */
+  margin-top: -0.6rem;
+}
+
+.home-contains .bg .h5 span {
+  font-family: "stalemate", cursive;
+  font-size: 1.3rem;
+  margin-top: -1rem;
+}
+
+.home-contains .bg .h5 h5 {
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  font-size: 0.6rem;
+  margin-top: -0.5rem;
 }
 
 /* info */
+.home-contains,
 .info,
-.RSVP {
-  background-color: #010101df;
+.RSVP,
+.gift {
+  background-color: #010101d6;
   color: #fff;
   text-align: center;
   padding: 8rem;
+}
+
+.mempelai {
+  background-color: #010101d6;
+  color: #fff;
+}
+
+.mempelai .calon-vexana h5 {
+  text-align: left;
 }
 
 .info .info-kolom {
@@ -232,8 +261,11 @@ h1 {
 }
 
 .info .info-kolom h1,
-.RSVP h1 {
-  color: lightblue;
+.RSVP h1,
+.gift h1,
+.home-contains h1,
+.mempelai h1 {
+  color: rgb(129, 191, 233);
   margin-bottom: 1rem;
 }
 
@@ -296,6 +328,56 @@ h1 {
   margin-top: 0.3rem;
 }
 
+/* gift */
+.gift h3 {
+  color: #fff;
+  font-family: "ruluko", Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.gift h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.gift li {
+  background-color: #ffffff2d;
+  color: #fff;
+}
+
+footer {
+  background-color: lightblue;
+  padding: 1rem;
+}
+
+footer .media {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+footer .media a {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  color: #010101df;
+  margin: 0 2rem;
+}
+
+footer .media a:hover {
+  color: #01010151;
+}
+footer .author {
+  color: #1f1c1cec;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+footer .author h5 {
+  font-size: 0.7rem;
+}
 /* packaging */
 .packaging.muncul {
   display: none;
@@ -357,14 +439,15 @@ h1 {
   .mempelai .calon .fadil .text p {
     margin-left: 9rem;
   }
-
-  .mempelai::after {
-    display: none;
-  }
 }
 @media (max-width: 576px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
+  }
+
+  .packaging {
+    max-width: 576px;
+    width: 100%;
   }
 
   .mempelai .calon .vexana {
@@ -374,5 +457,19 @@ h1 {
 
   #offcanvasNavbar {
     width: 50% !important;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 45%;
+  }
+
+  html h1 {
+    font-size: 3rem !important;
+  }
+
+  .home-contains .text-undangan p {
+    max-width: 25rem;
   }
 }

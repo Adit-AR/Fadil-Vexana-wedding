@@ -24,6 +24,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- simplycountdown -->
     <link
       rel="stylesheet"
@@ -32,6 +38,11 @@
     <script src="simply-countdown/simplyCountdown.min.js"></script>
 
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
     <title>Fadil & Vexana Wedding</title>
   </head>
@@ -100,9 +111,9 @@
       <!-- home -->
       <section class="home-contains" id="home">
         <div class="text-name">
-          <h1>udangan pernikahan</h1>
-          <h3 class="kepada">kepada bapak/ ibuk/ sodara/ i :</h3>
-          <h3 class="people-name">Malik alfiansyah</h3>
+          <h1>Udangan pernikahan</h1>
+          <h3 class="kepada">kepada bapak/ ibuk/ saudara/ i</h3>
+          <h3 class="people-name"></h3>
         </div>
         <div class="bg">
           <div class="text-undangan">
@@ -114,7 +125,10 @@
               fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Expedita, pariatur.
             </p>
-            <h5>kami yang berbahagia keluarga bapak hylos ibu karina</h5>
+            <div class="h5">
+              <h4>kami yang berbahagia keluarga <br /></h4>
+              <h5>bapak hylos <span>&</span> ibu karina</h5>
+            </div>
           </div>
         </div>
       </section>
@@ -133,7 +147,8 @@
                 <h3>Muhammad Fadil</h3>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Quidem, praesentium.
+                  Quidem, praesentium Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Ea, fugit?.
                 </p>
                 <h5>
                   Putra dari Bapak lorem <br />
@@ -162,7 +177,8 @@
                 <h3>Vexana Glowing</h3>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Numquam, voluptatibus.
+                  Numquam, voluptatibus Lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Suscipit, esse!.
                 </p>
                 <h5>
                   Putra dari Bapak hylos <br />
@@ -178,20 +194,22 @@
       <section class="info" id="info">
         <div class="row col-lg-10 col-md-8 info-kolom">
           <h1>Resepsi & Akad</h1>
+          <p class="mb-3">
+            Perhatian jika sampai di tujuan tidak ada tanda-tanda di langsungkan
+            pernikahan. Bisa jadi anda salah tempat atau salah tanggal.
+          </p>
           <h5>
             Alamat : Coffe senja Kisik Gempol <br />
             Jl. Wonoayu No.26, Kisik, Gempol, Kec. Gempol, Pasuruan.
           </h5>
-          <a
-            href="https://maps.app.goo.gl/JByni5N7W33NbaGP7"
-            target="_blank"
-            class="btn btn-outline-info"
-            >Klik untuk mebuka peta</a
-          >
-          <p>
-            Perhatian jika sampai di tujuan tidak ada tanda-tanda di langsungkan
-            pernikahan. Bisa jadi anda salah tempat atau salah tanggal.
-          </p>
+          <div>
+            <a
+              href="https://maps.app.goo.gl/JByni5N7W33NbaGP7"
+              target="_blank"
+              class="btn btn-outline-info btn-sm mt-1"
+              >Klik untuk mebuka peta</a
+            >
+          </div>
         </div>
         <div class="row mt-5">
           <div class="card col-lg-4 col-md-8 mx-auto">
@@ -241,7 +259,9 @@
           >
             <div class="col-12">
               <div class="mb-3">
-                <label for="name" class="form-label">Nama</label>
+                <label for="name" class="form-label"
+                  >Nama Kepala Keluarga</label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -267,7 +287,7 @@
             </div>
             <div class="col-12">
               <div class="mb-3 selected">
-                <label for="hadir">Hadir atau Tidak</label>
+                <label for="hadir">Status</label>
                 <select
                   class="form-select form-select-md mb-3"
                   aria-label="Multiple select example"
@@ -281,8 +301,44 @@
               </div>
             </div>
           </form>
+          <button class="btn btn-md btn-outline-info mt-3" type="submit">
+            Submit
+          </button>
         </div>
       </section>
+
+      <!-- gift -->
+      <section class="gift" id="gift">
+        <h1>Ucapan Tanda Kasih</h1>
+        <h3>berikan hadiah kepada kedua mempelai sebagai ucapan tanda kasih</h3>
+        <div class="col-lg-8 mx-auto mt-5">
+          <ul class="list-group">
+            <li class="list-group-item">
+              BCA <br />
+              089335478143
+            </li>
+            <li class="list-group-item">
+              Mandiri <br />
+              1234321567765
+            </li>
+            <li class="list-group-item">
+              shopee pay <br />
+              08992378893
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="media">
+          <a href=""><i class="bi bi-whatsapp"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-youtube"></i></a>
+        </div>
+        <div class="author"><h5>Author: Aditya Ardian Syah</h5></div>
+      </footer>
 
       <!-- pakacging end -->
     </section>
@@ -300,7 +356,7 @@
     <!-- simply countdown -->
     <script>
       simplyCountdown(".simply-countdown", {
-        year: 2024, // required
+        year: 2030, // required
         month: 6, // required
         day: 5, // required
         hours: 8, // Default is 0 [0-23] integer
