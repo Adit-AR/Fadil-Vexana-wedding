@@ -34,3 +34,12 @@
     padding: 25px;
   }
 }
+@media (max-width: 350px) {
+  html {
+    font-size: 50%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 20px;
+  }
+}
