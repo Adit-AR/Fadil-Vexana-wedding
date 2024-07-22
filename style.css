@@ -460,6 +460,19 @@ footer .author h5 {
   }
 }
 
+@media (max-width: 372px) {
+  html {
+    font-size: 45%;
+  }
+
+  html h1 {
+    font-size: 3rem !important;
+  }
+
+  .home-contains {
+    padding: 5rem;
+  }
+}
 @media (max-width: 350px) {
   html {
     font-size: 45%;
